@@ -1,0 +1,1153 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "5f9b3dfe-73cb-4630-8757-b1d374c293ac",
+   "metadata": {},
+   "source": [
+    "#### 2-7 불 자료형"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "cb5f9e14-6431-4f02-b74d-3cd191a9f528",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = True\n",
+    "b = False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "d1743113-0c48-4833-9030-243d70f7eec9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "bool"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "8d2bbe94-bfbd-43d5-92f5-d812d0e2bc12",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "bool"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "e7736cf1-4dfd-4dd6-90dc-d5abe2cf165a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "1 == 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "cfc31a54-88eb-4b5a-8607-3d963e9bc9de",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2>1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "c0a9d997-b351-4b03-8cc4-482f615bc3fe",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2<1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "fde8abce-7a99-4436-be4f-f6affd59e5f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n",
+      "3\n",
+      "2\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [1, 2, 3, 4]\n",
+    "while a:\n",
+    "    print(a.pop())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "0241d667-0e48-47e2-9eb6-328934d68987",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "거짓\n"
+     ]
+    }
+   ],
+   "source": [
+    "if []:\n",
+    "    print(\"참\")\n",
+    "else:\n",
+    "    print(\"거짓\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "ad4538dd-680c-4f87-994c-e28e963d1f86",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "참\n"
+     ]
+    }
+   ],
+   "source": [
+    "if[1,2,3]:\n",
+    "    print(\"참\")\n",
+    "else:\n",
+    "    print(\"거짓\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "078b0829-4677-40dd-b50b-3dacc77c49c8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bool('python')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "2c742d38-b9b6-4cda-b3cb-b634f695fc1a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bool('')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "663af513-06ed-4175-8422-4d9d108f9a57",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bool([1,2,3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "78a86b90-9b6e-4310-b334-fbe51e5130d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bool([])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "39a2cb5f-cc5b-44a3-bb3e-5ede3b8923c9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bool(0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "d90c9070-b781-43d8-8ec8-e22ff516279b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bool(3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "de6ecd40-be51-4c6f-aa9f-4a316301b289",
+   "metadata": {},
+   "source": [
+    "### 02-8 자료형의 값을 저장하는 공간, 변수"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "83880fc1-eb62-4697-8114-208c9387944b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 1\n",
+    "b = \"python\"\n",
+    "c = [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "81c6d9c8-82b3-4b58-9e58-04ca0fdc3791",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 변 수_이 름 = 변 수 에_저 장 할_값"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "423c78b2-a8cd-490b-99cc-1e75510ede27",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "da7f6aaf-334c-4a41-8ac4-fcfb1dc1f302",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1983536534464"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "id(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "792b0190-7ca2-47c2-b624-ed05e96f61e3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1983536534464"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b=a\n",
+    "id(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "7b04d14c-1315-4950-a10f-98add041619b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1983536534464"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "id(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "1e1936fa-294f-44d4-8e3e-a1d716fd987b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a is b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "621f88eb-f5f0-4818-b93c-7ae8353481fc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "ed24a791-5a58-4719-b90f-fdada168bc62",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3]"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "ceac63d7-22ed-4a44-bba9-0908bbee237e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3]"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "8f48e898-e897-4daf-a8d8-cfb9c62749ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 4, 3]"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = [1, 2, 3]\n",
+    "b = a[:]\n",
+    "a[1]=4\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "3f9e3e55-89f4-49b4-b385-210ac8820b34",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3]"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "1a3ac847-97b3-4da4-a4c8-c778afe2f2e4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from copy import copy \n",
+    "a = [1, 2, 3]\n",
+    "b = copy(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "0e86f831-d2b5-46a1-8d8a-43ba68bccc3d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b is a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "e7121fa8-85aa-423f-a062-98073253a553",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a, b = ('python', 'life')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "638e9de7-ffed-4d67-81f2-bdc66c008381",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "(a,b) = 'python', 'life'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "b45d1055-1e65-40fe-a41c-29292dbe45e9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "[a, b] = ['python', 'life']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "6c927c9d-99f7-48e5-ae77-776e26dfbcf8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = b = 'python'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "301d588c-66d6-47c3-9976-a1974ae2a879",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=3 \n",
+    "b=5\n",
+    "a,b = b,a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "ea188615-a73d-4269-aae6-4fe1ceb4432c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "ba37fd27-76ad-441b-835d-8f8c293bab0b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f356908a-6a0a-4b83-b1d5-d7212479e48c",
+   "metadata": {},
+   "source": [
+    "### 03-1 if문"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "2590ff55-ff5b-426d-8fc0-3da1045833eb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시를 타고 가라\n"
+     ]
+    }
+   ],
+   "source": [
+    "money = True\n",
+    "if money :\n",
+    "    print(\"택시를 타고 가라\")\n",
+    "else:\n",
+    "    print(\"걸어 가라\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fbbd9667-8fe5-43ce-b95e-0ac758d08902",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if 조건문 :\n",
+    "    수행할 문장1\n",
+    "    수행할 문장2\n",
+    "    ...\n",
+    "else: \n",
+    "    수행할 문장 A\n",
+    "    수행할 문장 B\n",
+    "    ....\n",
+    "\n",
+    "들여쓰기 하기"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "id": "d4f65927-c224-4353-9e0c-08860d720cd0",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "incomplete input (1869959152.py, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[80], line 2\u001b[1;36m\u001b[0m\n\u001b[1;33m    if money:\u001b[0m\n\u001b[1;37m             ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m incomplete input\n"
+     ]
+    }
+   ],
+   "source": [
+    "money = True \n",
+    "if money:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "id": "af9a7374-a96e-48b1-a5e5-35ed643f3e2f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 82,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = 3 \n",
+    "y = 2\n",
+    "x>y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "aae33c04-18b7-4fcc-a3d3-a27f2325b160",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 84,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x<y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "4c1bb1a2-1023-48a4-9d21-b2286b17d429",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 86,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x == y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "6b50a22d-1398-4498-88a9-074bce83af5e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 88,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x !=y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "ec568920-1ad6-4709-bba2-eded6a6d69bd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "걸어가라\n"
+     ]
+    }
+   ],
+   "source": [
+    "money = 2000 \n",
+    "if money >= 3000 :\n",
+    "    print(\"택시를 타고 가라\")\n",
+    "else:\n",
+    "    print(\"걸어가라\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "id": "bd6626d3-5990-4aa2-ae71-2668d521ff5e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 92,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x or y    # x,y 둘 중 하나만 참이면 참이다.\n",
+    "x and y   # x,y 둘 다 참이여야 참이다.\n",
+    "not x     # x 가 거짓이면 참이다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "id": "42327176-3df1-4ff0-9bc7-899789b6eb70",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시를 타고 가라\n"
+     ]
+    }
+   ],
+   "source": [
+    "money = 2000\n",
+    "card = True \n",
+    "if money >= 3000 or card:\n",
+    "    print(\"택시를 타고 가라\")\n",
+    "else:\n",
+    "    print(\"걸어가라\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "86199da7-7f8d-44d8-bb76-17ca2ce54ca1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 96,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "1 in [1,2,3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "id": "4cdfcf5d-fa15-4ebe-b935-15b4fe055df1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 98,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "1 not in [1,2,3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "id": "0f2abc04-65c2-4a8c-b2ca-5beaee1644f4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 100,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'a' in ('a', 'b', 'c')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "id": "0be44330-f293-48d0-9b65-baa0972eca95",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 102,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'j' not in 'python'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "11e505d8-2f23-4560-8c37-9feecc76d495",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시를 타고 가라\n"
+     ]
+    }
+   ],
+   "source": [
+    "pocket = ['paper', 'cellphone', 'money']\n",
+    "if 'money' in pocket:\n",
+    "    print(\"택시를 타고 가라\")\n",
+    "else:\n",
+    "    print(\"걸어가라\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "id": "2fffebb7-a1ee-4ef3-890f-9a12acb3a7b6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pocket = ['paper', 'money', 'cellphone']\n",
+    "if 'money' in pocket:\n",
+    "    pass\n",
+    "else:\n",
+    "    print(\"카드를 꺼내라\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "id": "c454ce68-9ac2-4b1f-83e7-52d9212b593d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시를 타고 가라\n"
+     ]
+    }
+   ],
+   "source": [
+    "pocket = ['paper', 'cellphone']\n",
+    "card = True\n",
+    "if 'money' in pocket:\n",
+    "    print(\"택시를 타고 가라\")\n",
+    "else:\n",
+    "    if card:\n",
+    "        print(\"택시를 타고 가라\")\n",
+    "    else:\n",
+    "        print(\"걸어가라\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "id": "6676b46d-aa72-43f2-84b4-af000f76385f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시를 타고 가라\n"
+     ]
+    }
+   ],
+   "source": [
+    "pocket = ['money', 'cellphone', 'money']\n",
+    "card = True \n",
+    "if 'money' in pocket:\n",
+    "    print('택시를 타고 가라')\n",
+    "elif card:\n",
+    "          print(\"택시를 타고 가라\")\n",
+    "else:\n",
+    "          print(\"걸어가라\")\n",
+    "          "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 139,
+   "id": "ac69c03b-f8fb-42c4-922a-0cf2c72373ce",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pocket = ['money', 'cellphone', 'money']\n",
+    "if 'money' in pocket:\n",
+    "    pass\n",
+    "else:\n",
+    "    print(\"카드를 꺼내라\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 141,
+   "id": "d9a82a1f-4e07-4d2b-becd-47ca3ebb3bce",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pocket = ['money', 'cellphone', 'money']\n",
+    "if 'money' in pocket: pass\n",
+    "else: print(\"카드를 꺼내라\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 161,
+   "id": "c2009fbd-aed7-4ddb-8e11-bce671b269d7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "score = 70\n",
+    "if score >= 60:\n",
+    "    message = \"sucess\"\n",
+    "else:\n",
+    "    message = \"failure\"\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9a42988e-9493-48d2-b68a-d9dd60393d1c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "message = \"success\" if score >= 60 else \"failure\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2f2342b5-8396-41e2-b6d2-8b484626b146",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
